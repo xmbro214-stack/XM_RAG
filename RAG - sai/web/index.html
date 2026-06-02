@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RAG 知识助手</title>
+    <link rel="stylesheet" href="/static/styles.css?v=20260529-m6-photo">
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">M6</span>
+          <div class="brand-copy">
+            <h1>RAG 知识助手</h1>
+            <span>SERES · 问界 M6 原型座舱</span>
+          </div>
+        </div>
+        <div class="toolbar">
+          <span class="select-pill">知识库：问界 M6 说明书</span>
+          <span id="indexState" class="select-pill">索引检查中</span>
+          <span class="select-pill">语言：中文</span>
+        </div>
+        <div class="user-avatar" aria-label="用户">U</div>
+      </header>
+
+      <aside class="sidebar">
+        <button id="newChatButton" class="new-chat" type="button">＋ 新建对话</button>
+        <label class="search-box">
+          <span>搜索</span>
+          <input type="search" placeholder="搜索历史会话" aria-label="搜索历史会话">
+        </label>
+
+        <section class="history">
+          <h2>历史会话</h2>
+          <button class="history-item active" type="button" data-question="慢充电口怎么打开？">
+            <strong>慢充电口怎么打开？</strong>
+            <span>问界 M6 / 充电</span>
+          </button>
+          <button class="history-item" type="button" data-question="充电枪拔不出来怎么办？">
+            <strong>充电枪拔不出来怎么办？</strong>
+            <span>应急处理</span>
+          </button>
+          <button class="history-item" type="button" data-question="如何设置充电限值？">
+            <strong>如何设置充电限值？</strong>
+            <span>能量设置</span>
+          </button>
+        </section>
+
+        <button id="indexButton" class="manage-button" type="button">管理知识库</button>
+      </aside>
+
+      <section class="chat-panel">
+        <div id="messages" class="messages" aria-live="polite">
+          <section class="welcome-panel">
+            <div class="welcome-copy">
+              <div class="welcome-icon">M6</div>
+              <div>
+                <h2>您好，有什么可以帮助您？</h2>
+                <p>基于「问界 M6 说明书」知识库，为您提供用车、充电、故障和安全提示查询。</p>
+              </div>
+            </div>
+            <div class="m6-concept" aria-hidden="true">
+              <figure class="m6-photo-card">
+                <img class="m6-photo" src="/static/assets/wenjie-m6-photo.svg" alt="AITO Wenjie M6">
+              </figure>
+            </div>
+          </section>
+        </div>
+
+        <div class="quick-prompts" aria-label="常用问题">
+          <button type="button">慢充电口怎么打开？</button>
+          <button type="button">充电枪拔不出来怎么办？</button>
+          <button type="button">如何设置充电限值？</button>
+        </div>
+
+        <form id="askForm" class="composer">
+          <div id="attachmentPreview" class="attachment-preview" aria-live="polite"></div>
+          <div class="composer-row">
+            <button id="imageButton" class="icon-button" type="button" aria-label="选择图片">＋</button>
+            <input id="imageInput" type="file" accept="image/*" multiple hidden>
+            <input id="questionInput" type="text" placeholder="请输入你的问题..." autocomplete="off" aria-label="问题">
+            <button id="sendButton" type="submit">发送</button>
+          </div>
+        </form>
+      </section>
+
+      <aside class="sources-panel">
+        <section class="side-card">
+          <h2>来源文档</h2>
+          <div id="sourceCards" class="source-cards">
+            <article class="source-card featured">
+              <span class="doc-icon">▣</span>
+              <div>
+                <strong>问界 M6 说明书 v2.1</strong>
+                <p>PDF · 388 页 · 本地知识库</p>
+              </div>
+              <span class="source-score">已索引</span>
+            </article>
+            <article class="source-card">
+              <span class="doc-icon">▣</span>
+              <div>
+                <strong>仪表指示灯与故障灯</strong>
+                <p>重点结构化 · 95 条图标</p>
+              </div>
+              <span class="source-score">高相关</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="side-card">
+          <h2>文档预览</h2>
+          <div id="sourcePreview" class="source-preview">
+            <div class="preview-vehicle" aria-hidden="true">
+              <span></span>
+            </div>
+            <strong>问界 M6 说明书 v2.1</strong>
+            <span>第 302 页 · 主动安全辅助</span>
+            <p>可预览答案引用片段、页码和相关章节。提问后这里会展示最相关来源。</p>
+          </div>
+        </section>
+      </aside>
+    </main>
+    <script src="/static/app.js?v=20260529-m6-photo"></script>
+  </body>
+</html>

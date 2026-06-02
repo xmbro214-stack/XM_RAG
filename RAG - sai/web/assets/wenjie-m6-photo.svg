@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" role="img" aria-labelledby="title desc">
+  <title id="title">AITO Wenjie M6</title>
+  <desc id="desc">A studio-style front three-quarter view of a silver Wenjie M6 with dark glass, cyan running lights, and a front plate.</desc>
+  <defs>
+    <linearGradient id="studio" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5f6166"/>
+      <stop offset="0.48" stop-color="#3f4146"/>
+      <stop offset="1" stop-color="#8e9195"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#34363b"/>
+      <stop offset="0.55" stop-color="#14161a"/>
+      <stop offset="1" stop-color="#c1c4c6"/>
+    </linearGradient>
+    <linearGradient id="paint" x1="80" y1="154" x2="622" y2="262" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b7b8bb"/>
+      <stop offset="0.17" stop-color="#ecebed"/>
+      <stop offset="0.43" stop-color="#8c8e91"/>
+      <stop offset="0.67" stop-color="#d5d5d6"/>
+      <stop offset="1" stop-color="#707377"/>
+    </linearGradient>
+    <linearGradient id="hood" x1="90" y1="126" x2="416" y2="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e1e0df"/>
+      <stop offset="0.44" stop-color="#898a8c"/>
+      <stop offset="0.8" stop-color="#4b4c50"/>
+      <stop offset="1" stop-color="#b8b9ba"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="280" y1="92" x2="577" y2="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#101318"/>
+      <stop offset="0.58" stop-color="#25282d"/>
+      <stop offset="1" stop-color="#050609"/>
+    </linearGradient>
+    <radialGradient id="wheel" cx="50%" cy="50%" r="55%">
+      <stop offset="0" stop-color="#e9edf0"/>
+      <stop offset="0.16" stop-color="#c2c9cf"/>
+      <stop offset="0.2" stop-color="#181a1e"/>
+      <stop offset="0.7" stop-color="#0a0c10"/>
+      <stop offset="1" stop-color="#30343a"/>
+    </radialGradient>
+    <filter id="softShadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="20" stdDeviation="22" flood-color="#07080a" flood-opacity="0.45"/>
+    </filter>
+    <filter id="cyanGlow" x="-80%" y="-150%" width="260%" height="400%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="720" height="380" fill="url(#studio)"/>
+  <path d="M0 288 C145 257 303 265 428 290 C560 317 636 318 720 286 L720 380 L0 380 Z" fill="url(#floor)" opacity="0.82"/>
+  <ellipse cx="373" cy="317" rx="282" ry="44" fill="#050608" opacity="0.46"/>
+
+  <g filter="url(#softShadow)">
+    <path d="M111 212 C133 159 204 133 314 130 L503 133 C573 137 633 178 652 231 C660 253 648 277 618 283 L168 286 C110 288 82 260 111 212 Z" fill="url(#paint)"/>
+    <path d="M121 214 C156 156 240 125 354 122 C453 119 541 138 602 180 C561 168 480 159 384 158 C273 157 181 173 121 214 Z" fill="url(#hood)" opacity="0.95"/>
+    <path d="M279 128 C311 91 375 75 461 80 C525 84 572 112 603 169 C522 150 428 143 318 150 C299 146 287 138 279 128 Z" fill="url(#glass)"/>
+    <path d="M330 95 C369 78 431 73 488 86 C479 82 456 82 429 83 C384 85 350 91 330 95 Z" fill="#090b0f" opacity="0.9"/>
+    <path d="M459 86 C480 90 502 97 523 110 L541 173 L488 158 Z" fill="#15181d" opacity="0.88"/>
+    <path d="M504 139 L590 161 C598 163 602 171 598 178 L500 158 Z" fill="#06080c" opacity="0.82"/>
+    <path d="M167 190 C210 173 275 167 353 173 C276 181 217 195 176 213 Z" fill="#eeeff0" opacity="0.43"/>
+    <path d="M281 194 C330 176 398 173 478 184 C446 204 355 216 292 213 C279 209 274 201 281 194 Z" fill="#0a0c10"/>
+    <path d="M291 198 C345 185 416 183 467 191 C430 202 348 210 297 207 Z" fill="#cfd3d6" opacity="0.9"/>
+    <rect x="350" y="196" width="34" height="9" rx="4" fill="#f8ffff"/>
+    <rect x="397" y="196" width="36" height="9" rx="4" fill="#f7ffff"/>
+    <path d="M107 229 L282 226 C270 238 252 249 227 257 L101 263 C96 251 98 238 107 229 Z" fill="#111317"/>
+    <path d="M292 231 L474 223 C485 245 468 266 431 274 L287 272 C276 257 278 243 292 231 Z" fill="#111317"/>
+    <path d="M495 221 L630 225 C640 241 636 257 619 265 L508 270 C491 256 487 240 495 221 Z" fill="#101217"/>
+    <path d="M101 263 L631 263" stroke="#050609" stroke-width="9" stroke-linecap="round" opacity="0.86"/>
+    <path d="M131 235 L196 230 C213 233 221 241 219 253 L126 258 C116 254 115 241 131 235 Z" fill="#07090d"/>
+    <path d="M122 217 C152 207 193 202 231 204 C204 219 162 226 122 217 Z" fill="#ced6dc"/>
+    <path d="M126 217 C154 211 190 208 219 209" fill="none" stroke="#f7ffff" stroke-width="4" stroke-linecap="round"/>
+    <path d="M529 198 C574 199 618 211 641 235 C601 229 556 217 529 198 Z" fill="#d6dde2"/>
+    <path d="M542 201 C578 205 609 216 631 231" fill="none" stroke="#f8ffff" stroke-width="4" stroke-linecap="round"/>
+    <path d="M125 255 L176 250" stroke="#25f4df" stroke-width="8" stroke-linecap="round" filter="url(#cyanGlow)"/>
+    <path d="M514 248 L574 245" stroke="#25f4df" stroke-width="8" stroke-linecap="round" filter="url(#cyanGlow)"/>
+    <rect x="244" y="238" width="103" height="36" rx="4" fill="#151719"/>
+    <text x="296" y="262" text-anchor="middle" font-family="'Microsoft YaHei', 'Noto Sans CJK SC', sans-serif" font-size="22" font-weight="600" fill="#f2f4f5">问界 M6</text>
+    <path d="M237 176 C251 166 270 162 288 166" fill="none" stroke="#34373d" stroke-width="4" stroke-linecap="round"/>
+    <path d="M327 136 C366 129 443 131 520 154" fill="none" stroke="#f8f9f9" stroke-width="5" stroke-linecap="round" opacity="0.33"/>
+    <path d="M430 116 C448 113 464 113 478 116" fill="none" stroke="#2e3137" stroke-width="10" stroke-linecap="round"/>
+    <path d="M481 157 L493 247" fill="none" stroke="#35383e" stroke-width="3" opacity="0.52"/>
+    <path d="M559 181 L568 254" fill="none" stroke="#30343a" stroke-width="3" opacity="0.5"/>
+    <circle cx="226" cy="279" r="59" fill="url(#wheel)"/>
+    <circle cx="226" cy="279" r="36" fill="#0b0d12" stroke="#c7ccd1" stroke-width="6"/>
+    <circle cx="226" cy="279" r="10" fill="#dde3e8"/>
+    <g stroke="#dce2e6" stroke-width="8" stroke-linecap="round">
+      <path d="M226 244 L226 268"/>
+      <path d="M226 290 L226 314"/>
+      <path d="M192 279 L216 279"/>
+      <path d="M236 279 L260 279"/>
+      <path d="M203 256 L220 273"/>
+      <path d="M232 285 L249 302"/>
+    </g>
+    <circle cx="565" cy="274" r="69" fill="url(#wheel)"/>
+    <circle cx="565" cy="274" r="42" fill="#0b0d12" stroke="#c7ccd1" stroke-width="7"/>
+    <circle cx="565" cy="274" r="11" fill="#e1e6ea"/>
+    <g stroke="#e1e6ea" stroke-width="9" stroke-linecap="round">
+      <path d="M565 233 L565 260"/>
+      <path d="M565 288 L565 316"/>
+      <path d="M524 274 L553 274"/>
+      <path d="M577 274 L606 274"/>
+      <path d="M536 246 L557 267"/>
+      <path d="M573 282 L594 303"/>
+    </g>
+  </g>
+  <rect x="1" y="1" width="718" height="378" fill="none" stroke="#ffffff" stroke-opacity="0.12" stroke-width="2"/>
+</svg>
